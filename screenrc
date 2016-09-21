@@ -1,0 +1,19 @@
+# mouse scrolling 
+termcapinfo xterm* ti@:te@ 
+
+# screen info bar
+caption always # activates window caption
+caption string '%{= wk}[ %{k}%H %{k}][%= %{= wk}%?%-Lw%?%{r}(%{r}%n*%f%t%?(%u)%?%{r})%{k}%?%+Lw%?%?%= %{k}][%{b} %d/%m %{k}%c %{k}]' # good looking window bar
+ 
+#bindkey -k k5 prev # F5 for previous window
+#bindkey -k k6 next # F6 for next window
+
+# scrollback buffer
+defscrollback 10002
+startup_message off
+
+# mouse wheel scrolling
+termcapinfo * ti@:te@
+
+# load local screen config
+layout save default
