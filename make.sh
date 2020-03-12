@@ -16,6 +16,6 @@ echo 'done'
 # get few packages
 echo -n 'Installing plugins...'
 cd $basedir
-git submodule update --init
+git submodule update --init --remote --merge
 vim +PlugInstall +qall
 echo 'done'
